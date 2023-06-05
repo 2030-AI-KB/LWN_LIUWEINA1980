@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Transition</title>
+</head>
+<style>
+    p{
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        transition: width 3s, background-color 1s ease 1s;
+        /* transition-property: background-color;     /* 전환 효과를 줄 속성명 */
+        /* transition-duration: 1s; */                /* 전환 효과를 수행하는 시간 */
+        /* transition-timing-function: linear; */    /* 규칙적인 속도로 전환을 수행 */
+        /* transition-timing-function: ease; */      /* 전환의 처음과 끝을 천천히, 그 중간은 빠르게 수행 */
+        /* transition-timing-function: ease-in; */
+        transition-delay: 3s;
+    }
+    /* p:hover{
+        width: 500px;
+        background-color: aquamarine;
+    }  */
+    p:active{
+        width: 500px;
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    <!-- 트랜지션(css 속성): 정해진 시간동안 요소의 속성값을 부드럽게 변화시키는 속성 -->
+    <!-- 이 속성을 통해서, 속성값에 따른 전환효과를 주면서 지속시간도 설정 -->
+    <p>사각형</p>
+</body>
+</html>

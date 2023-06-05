@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_Function</title>
+</head>
+<body>
+    <script>
+        // 배열: 여러 값을 갖는 공간 (모두 같은 타입의 정보일 필요X)
+        // let/const 배열명 = [배열값1, 배열값2,...];
+
+        let introduce=["이유나", 25, "Female", 'A', true];
+        let introduce2=Array("이유나", 25, "Female", 'A', true);
+        let introduce3=new Array("이유나", 25, "Female", 'A', true);
+        document.write("이름: "+introduce[0]+"<br>");
+        document.write("나이: "+introduce[1]+"<br>");
+        document.write("성별: "+introduce[2]+"<br>");
+        document.write("혈액형: "+introduce[3]+"<br>");
+
+        let student=[];
+        student[0]="이유나";
+        document.write(student[0]);
+        document.write(student[2]);
+        student.push(25);
+        document.write(student[1]);
+
+        // 값 삭제
+        delete student[0];
+        document.write(student[0]);
+        
+        // 함수: 명령문들의 집합
+        // function 함수명(매개변수명, ...){
+        //     실행할 명령문
+        // }
+        console.log("5+6의 결과: "+add(5, 6));
+        console.log("hello+world의 결과: "+add("hello", "world"));
+        // 함수 선언은 어디에서 해도 에러 발생X
+        function add(x, y){
+            return x+y;
+        }
+    </script>
+</body>
+</html>

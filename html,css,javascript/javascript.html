@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <p id="test">변경되기 전의 문장입니다.</p>
+    <script>
+        // 자바스크립트 코드 작성할 수 있는 공간
+        // script 태그 body 태그의 뒷부분에 기재하는 걸 "권장"
+
+        // html(화면 구성) / css(화면 디자인) / JavaScript(화면의 간단한 동작)
+        // "JavaScript는 Java와 별개의 언어이다."
+
+        alert("경고창을 띄웁니다."); 
+        console.log("이 문장은 콘솔창에 띄워집니다.");
+        document.write("이 문장은 홈페이지에 띄워집니다.");
+        let st=document.getElementById("test");   // 변수 st와 id가 test인 태그와 연동
+        st.innerHTML="문장이 변경되었습니다.";
+        let str=document.getElementById("test").innerHTML="2번째로 변경된 문장입니다.";
+
+        // 자료형: number, string, boolean
+        // 변수 선언: let [변수명];     
+        // 상수 선언: const [상수명] = [초기값]
+        const c = "이것은 상수입니다.";
+        
+        // 산술연산자 / 대입연산자 / 증감연산자 / 논리연산자
+        // 비교연산자: 같다(===), 다르다(!==)
+        // 삼항연산자(?) -> [조건문] ? [조건문이 참일 때 실행할 것] : [조건문이 거짓일 때 실행할 것]
+
+        // 입력문: 홈페이지의 알림창을 통해 입력
+        // 1.문자열(string) 입력
+        let input_string=prompt("이름을 입력하세요", "none");
+        // 2.숫자(number) 입력
+        let input_number=prompt("나이를 입력하세요", 0);
+        input_number=Number(input_number);
+        document.write(input_number);
+        document.write(typeof(input_number));
+        // 3.불(boolean) 입력
+        let bool=confirm("이대로 진행하시겠습니까?");
+       
+        // 강제 형변환: Number(값/변수), String(값/변수), Boolean(값/변수)
+
+        // 조건문: if-else if-else문 / switch문
+        // 반복문: while문 / for문 / do-while문 / for/in문 / for/of문
+        // break / contiune
+
+        // 배열: 여러 값을 갖는 공간 (모두 같은 타입의 정보일 필요X)
+    </script>
+</body>
+</html>

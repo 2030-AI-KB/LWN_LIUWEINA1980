@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인적사항 입력</title>
+</head>
+<body>
+    <script>
+        alert("인적사항을 차레대로 입력해주시길 바랍니다.");
+
+        let input_name=prompt("이름을 입력하세요:");
+        let input_age=prompt("나이를 입력하세요:");
+        input_age=Number(input_age);
+        let bool=confirm("이대로 진행하시겠습니까?");             //확인: true, 취소: false
+
+        // document.write("이름: ");
+        // document.write(input_name);
+        // document.write("<br>");
+        // console.log("이름: "+input_name);
+
+        // document.write("나이: ");
+        // document.write(input_age);
+        // console.log("나이: "+input_age);
+
+        if(bool===true){
+            console.log("이름: "+input_name+"\n"+"나이: "+input_age);
+            document.write("이름: "+input_name+"<br>"+"나이: "+input_age);
+        }
+        else{
+            console.log("취소 요청을 하였습니다.");
+            document.write("다시 실행해 주시길 바랍니다.");
+        }
+    </script>
+</body>
+</html>

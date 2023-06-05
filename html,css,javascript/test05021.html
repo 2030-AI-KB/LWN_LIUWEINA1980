@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    input{
+        margin: 5px;
+    }
+</style>
+<body>
+    <form>
+        <label>이름:</label>
+        <input type="text" id="name">
+        <br>
+
+        <label>성별:</label>
+        <input type="text" id="gender">
+        <br>
+
+        <label>나이:</label>
+        <input type="text" id="age">
+        <br>
+    </form>
+
+        <br>
+        <button id="btn">저장</button>
+
+        <p id="test"></p>                    <!-- 결과값 출력될 공간 -->
+
+    <script>
+        let button = document.getElementById("btn");
+        button.addEventListener("click", show);
+
+        function show(){
+            alert("입력 감사합니다.");
+
+            let name = document.getElementById("name").value;
+            let gender = document.getElementById("gender").value;
+            let age = document.getElementById("age").value;
+
+            document.getElementById("test").innerHTML =
+            `<hr>
+            이름: ${name}<br>
+            성별: ${gender}<br>
+            나이: ${age}<br>`;       
+        }
+    </script> 
+</body>
+</html>

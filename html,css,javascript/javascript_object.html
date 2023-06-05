@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object1</title>
+</head>
+<body>
+    <script>
+        // 객체: 실생활에서 파악 가능한 사물 또는 실체 (클래스 개념X)
+        let student = {
+            name: "이유나",      // 큰따옴표, 작은따옴표 상관X
+            age: 25,
+            blood: 'A',
+
+            Print: function(){
+                document.write("이름: "+this.name+"<br>");
+                document.write("나이: "+this.age+"<br>");
+                document.write("혈액형: "+this.blood+"<br>");
+            }
+        }
+
+        student.Print();
+
+        student.blood = 'AB';
+        document.write(student.blood);
+        document.write("<br>");
+        document.write(student["age"]);
+
+        delete student.blood;
+        console.log("혈액형은 "+student.blood+"입니다.");
+        // console.log(`혈액형은 ${this.blood}입니다.`);
+
+        let day = new Date();                    // let/const 객체명 = new 생성자명;
+        console.log(day.getFullYear());
+
+        let birth = new Object();
+        birth.year = 1999;
+        birth.month = 7;
+        birth.day = 30;
+
+        let birth1 = {
+            year: 1999,
+            month: 7,
+            day: 30,
+        }
+
+        // [설명X] 객체 구현 3 -> Object.create() 메소드 이용
+    </script>    
+</body>
+</html>

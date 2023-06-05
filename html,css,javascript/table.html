@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>표와 리스트</title>
+</head>
+<style>
+    table, th, td{
+        border: 3px solid white;
+        border-collapse: collapse;
+    }
+    th, td{
+        background-color: moccasin;
+        text-align: center;
+        padding: 10px;
+        /* margin: 10px; */
+    }
+</style>
+<body>
+    <p>인적사항</p>
+    <table style="width: 70%">
+        <!-- tr: 행의 역할 수행 -->
+        <!-- th: 열의 역할 수행(head) -->
+        <!-- td: 열의 역할 수행(date) -->
+        <tr>
+            <th>이름</th>
+            <th>성별</th>
+            <th>나이</th>
+        </tr>
+        <tr>
+            <td>이유나</td>
+            <td>여자</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>김홍근</td>
+            <td>남자</td>
+            <td>35</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- 정렬되지 않은 목룩: <ul>, <li> -->
+    <p>음료수 종류</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Vitamin Drink</li>
+        <li>Milk</li>
+    </ul>
+    <br>
+    
+    <!-- 정렬된 목룩: <ol>, <li> -->
+    <ol>
+        <li>Americano</li>
+        <li>Latte</li>
+        <li>Banana Milk</li>
+    </ol>
+    <br>
+
+    <!-- 설명 목룩: <dl>, <dt>, <dd> -->
+    <dl>
+        <dt>Americano</dt>
+        <dd>좋아좋아좋아!</dd>
+        <dt>Latte</dt>
+        <dd>부드러워요!</dd>
+        <dt>Banana Milk</dt>
+        <dd>달아요!</dd>
+    </dl>
+</body>
+</html>

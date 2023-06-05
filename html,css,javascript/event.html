@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <!-- <button onclick="alert('버튼을 클릭했어요!')">버튼을 눌러보세요</button>
+    <p id="text" onclick="Print()">문자열을 눌러보세요</p> -->
+
+    <button id="btn">버튼</button>
+    <p id="test"></p>
+    <p id="test2"></p>              
+
+    <script>
+        // 이벤트: 브라우저 또는 사용자가 하는 어떤 행위
+
+        // 이벤트 연결 방법: (1) html 태그의 속성으로 등록 (2) Js 코드에서 즉시 적용
+        // function Print(){
+        //     // document.write("Hello World!");
+        //     document.getElementById("text").innerHTML="Hello World!";
+        // }
+
+        // window.onload=function(){          // 웹페이지 로드가 완료되면, 해당 함수를 실행하라.
+        //     document.write("웹페이지 로드가 완료되었습니다.");
+        // }
+
+        // * 이벤트 종류 
+        // click: 특정 html 요소 클릭
+        // load: 브라우저가 페이지 로드를 완료
+        // change: html 요소 변경
+        // mouseover: 특정 html 요소 위로 마우스 이동
+
+        // * 이벤트 리스너: 이벤트 발생 시, 그 처리를 전문으로 담당하는 "함수"
+        // 대상객체.addEventListener("이벤트명", 실행할이벤트리스너)
+        let button=document.getElementById("btn");     // id가 btn인 요소를 선택하여 button 변수로 지정
+        button.addEventListener("click", show);        // button 변수에 주어진 이벤트 등록: 클릭했을 때, 함수 show을 실행한다.
+        button.addEventListener("mouseover", show2);
+        function show(){
+            // alert("버튼을 눌렀습니다.");
+            document.getElementById("test").innerHTML="버튼을 눌렀습니다.";
+        }
+
+        function show2(){
+            document.getElementById("test2").innerHTML="눌러 ㅎㅅㅎ";
+        }
+        // 이벤트 적용 중복으로 가능
+    </script>
+</body>
+</html>

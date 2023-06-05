@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Dolami</title>
+</head>
+<style>
+h2{
+    text-align: center;
+}
+
+div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+label{
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid black;
+    transition: background-color 2s, font-size 2s, color 2s, width 2s, height 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+#do:hover{
+    background-color: red;
+}
+#re:hover{
+    background-color: orange;
+}
+#mi:hover{
+    background-color: yellow;
+}
+#fa:hover{
+    background-color: green;
+}
+#sol:hover{
+    background-color: blue;
+}
+#la:hover{
+    background-color: skyblue;
+}
+#si:hover{
+    background-color: violet;
+}
+
+label:active{
+    font-size: 30px;
+    color: white;
+    width: 100px;
+    height: 550px;
+}
+</style>
+<body>
+    <h2>음계를 눌러보세요.</h2>
+    <br>
+
+    <div>
+        <label id="do">도</label>
+        <label id="re">래</label>
+        <label id="mi">미</label>
+        <label id="fa">파</label>
+        <label id="sol">솔</label>
+        <label id="la">라</label>
+        <label id="si">시</label>
+        <label id="do">도</label>
+    </div>
+</body>
+</html>

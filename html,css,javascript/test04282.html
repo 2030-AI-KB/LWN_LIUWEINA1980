@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arr</title>
+</head>
+<body>
+    <script>
+        let information=[];
+
+        information[0]=prompt("이름을 입력하세요:", "(ex)홍길동");
+        information[1]=prompt("나이를 입력하세요:");
+        information[1]=Number(information[1]);
+
+        let bool=confirm("여성이십니까? 맞다면, 확인을 눌려주세요.");
+        if(bool===true){
+            information[2]="여성"; 
+            
+            document.write("이름: "+information[0]+"<br>"+"나이: "+information[1]+"<br>"+"성별: "+information[2]+"<br><br>");
+            dm(information[1], information[2]);
+        }
+        else{
+            document.write("지원 대상자가 아닙니다.");
+        }
+        
+        function dm(age, gender){
+            if(age >= 20 && age < 40 && gender==="여성"){
+                document.write("환영합니다!"+"<br>"+"2030 여성지원 과정에 지원 가능하십니다!");
+            }
+            else{
+                document.write("지원 대상자가 아닙니다.");
+            }
+        }
+    </script>   
+</body>
+</html>

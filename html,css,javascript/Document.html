@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">이름: </label>
+        <!-- <input type="text" id="name" name="name" value="이름 입력하세요"> -->
+        <input type="text" id="name" name="name">
+    <br>   
+
+        <label for="gender">성별: </label>
+    <form> 
+        <input type="radio" name="gender" value="male">
+        <label for="male">남성</label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">여성</label>
+        <input type="radio" name="gender" value="etc">
+        <label for="etc">기타</label>
+    </form>
+    <br>
+
+    <label>가입경로: </label>
+    <form>
+        <input type="checkbox" name="signup" value="visit">
+        <label for="visit">기관 방문</label>
+        <input type="checkbox" name="signup" value="banner">
+        <label for="banner">현수막</label>
+        <input type="checkbox" name="signup" value="tel">
+        <label for="tel">전화</label>
+        <input type="checkbox" name="signup" value="recommand">
+        <label for="recommand">지인 추천</label>
+    </form>
+
+    <p>나의 각오: </p>
+    <textarea name="fighting" row="4" cols="50"></textarea>
+    <input type="submit">
+    </form>
+</body>
+</html>

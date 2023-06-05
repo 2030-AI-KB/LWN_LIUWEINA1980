@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    /* body{
+        background-color: aqua;
+    } */
+
+    /* 미디어쿼리: 특정 조건이 참인 경우, 미디어쿼리 양식에 있는 속성값 적용 */
+    @media screen and (max-width: 600px){             /* 뷰포트 너비가 600 이하일 때 */
+        body{
+            background-color: darksalmon;
+        }        
+    }
+    
+    @media screen and (min-width: 600px){             /* 뷰포트 너비가 600 이상일 때 */
+        body{
+            background-color: red;
+        }        
+    }
+
+    @media screen and (orientation: landscape){        /* landscape: 화면이 가로 모드일 때 */  /* portrait: 화면이 세로 모드일 때 */
+        body{
+            background-color: chocolate;
+        }       
+    }
+</style>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object1</title>
+</head>
+<body>
+    <script>
+        let num1=prompt("과목1 성적을 입력하세요:");     
+        num1 = Number(num1);
+        let num2=prompt("과목2 성적을 입력하세요:");
+        num2 = Number(num2);
+        let num3=prompt("과목3 성적을 입력하세요:");
+        num3 = Number(num3);
+        let num4=prompt("과목4 성적을 입력하세요:");
+        num4 = Number(num4);
+        let num5=prompt("과목5 성적을 입력하세요:");
+        num5 = Number(num5);
+
+        // for(let i=0;i<5;i++){
+        //     data.score[i]=Number(prompt(`${i+1}과목 성적을 입력하세요:`));
+        // }
+ 
+        let good = 0;
+        let score_arr=[num1, num2, num3, num4, num5, good];
+
+        function subject_score(x){
+            if(x >= 60){
+                    score_arr[5]+=1;
+                }
+        }
+
+        function sum(){
+            let sum = 0;
+            let ave = 0;
+
+            for(let i=0;i<5;i++){
+                sum+=score_arr[i];
+            }
+
+            ave = sum/5;
+
+            if(ave >= 80){
+                score_arr[5]++;
+            }
+        }
+
+        document.write("과목1: "+score_arr[0]+"<br>");
+        document.write("과목2: "+score_arr[1]+"<br>");
+        document.write("과목3: "+score_arr[2]+"<br>");
+        document.write("과목4: "+score_arr[3]+"<br>");
+        document.write("과목5: "+score_arr[4]+"<br>");
+        document.write("good: "+score_arr[5]+"<br>");
+
+        subject_score(score_arr[0]);
+        subject_score(score_arr[1]);
+        subject_score(score_arr[2]);
+        subject_score(score_arr[3]);
+        subject_score(score_arr[4]);
+
+        sum();
+
+        document.write("<hr>");
+        document.write("good: "+score_arr[5]+"<br>");
+        let result;
+        (score_arr[5] === 6) ? result = "합격입니다." : result = "불합격입니다.";
+        document.write(result);
+    </script>
+</body>
+</html>

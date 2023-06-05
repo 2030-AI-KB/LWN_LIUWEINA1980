@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calling</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    form{
+        width: 150px;
+        height: 500px;
+    }
+    form#on{
+        float: left;
+        margin-left: 30%;
+    } 
+    form#out{
+        float: right;
+        margin-right: 30%;
+    }
+    input{
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+    img{
+        animation-name: bigger;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes bigger{
+        0%{width: 130px; height: 130px;}
+        50%{width: 150px; height: 150px;}
+        100%{width: 130px; height: 130px;}
+    }
+</style>
+<body>
+    <h2>전화가 왔습니다. 받으시겠습니까?</h2>
+    <form id="on" action="on.html">
+        <input type="submit" value="전화받기">
+        <br>
+        <br>
+        <img src="on.png" width="130px" height="130px">
+    </form>
+    <form id="out" action="out.html">
+        <input type="submit" value="수신거절">
+        <br>
+        <br>
+        <img src="out.png" width="130px" height="130px">
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 반응형 웹 설계 시, 포함시켜야 함 --> <!-- 뷰포트: 브라우저 창의 영역/크기 -->
+    <title>Responsive Web</title>
+</head>
+<style>
+    img{
+        /* width, height, max-width, max-height, min-width, min-height */
+        width: 70%;             /* img 태그의 너비를, 뷰포트 너비의 70%만큼 차지하게끔 하라. */
+        /* max-width: 50%; */      /* "max값에 한계를 가진" 너비 값 설정, 최대값은 width로 지정된 값이나 원본 사진의 너비를 따른다. */
+        /* min-width: 60%; */      /* "min값에 한계를 가진" 너비 값 설정, 최소값은 width로 지정된 값이나 원본 사진의 너비를 따른다. */
+    }
+</style>
+<body>
+    <!-- <img src="miaomiao.jpg"> -->
+
+    <!-- 뷰포트 크기에 따라, 다른 사진을 보여주게끔 설정 -->
+    <picture>
+        <source srcset="zanggu1.jfif" media="(max-width:500px)">
+        <source srcset="zanggu2.jfif" media="(max-width:1000px)">
+        <source srcset="zanggu3.jfif">
+        <img>     <!-- 이미지 공간 배정만 하는 용도 -->
+    </picture>
+    <h3 style="font-size: 5vw;">화면을 줄여보세요.</h3>   <!-- 뷰포트의 크기에 따라 글자 사이즈를 다르게 하고 싶다면 vw(viewport width)) 사용 -->
+</body>
+</html>

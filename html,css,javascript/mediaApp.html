@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaApp</title>
+</head>
+<style>
+    p{
+        border: 3px solid black;
+        font-size: 25px; color: black;
+        background-color: white;
+        height: 80px;
+    }
+
+    @media screen and (min-width: 600px){             
+        p#fir{
+            background-color: red;
+        }        
+    }
+
+    @media screen and (min-width: 700px){             
+        p#sec{
+            background-color: yellow;
+        }        
+    }
+
+    @media screen and (min-width: 800px){         
+        p#thr{
+            background-color: green;
+        }        
+    }
+
+    @media screen and (min-width: 900px){            
+        p#for{
+            background-color: blue;
+        }        
+    }
+
+    @media screen and (min-width: 1000px){        
+        p#fif{
+            background-color: violet;
+        }        
+    }
+
+    @media screen and (min-width: 1100px){        
+        p{
+            font-size: 30px;
+            color:white;
+        }        
+    }
+</style>
+<body>
+    <p id="fir">1st p 태그</p>
+    <p id="sec">2nd p 태그</p>
+    <p id="thr">3nd p 태그</p>
+    <p id="for">4th p 태그</p>
+    <p id="fif">5th p 태그</p>
+</body>
+</html>

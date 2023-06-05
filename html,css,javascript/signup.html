@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1>회원 가입</h1>
+    <div>
+    <form>
+        <label for="name">이름: </label>
+        <input type="text" id="name" name="name">
+        <label for="gender">성별: </label>
+            <form>
+                <input type="radio" name="gender" value="male">
+                <label for="male">남성</label>
+                <input type="radio" name="gender" value="female">
+                <label for="female">여성</label>
+            </form>
+        <br>
+
+        <lable for="ID">아이디: </lable>
+        <input type="text" id="ID" name="ID">
+        <lable for="PW">비밀번호: </lable>
+        <input type="password" id="PW" name="PW">
+        <br>
+        <br>
+
+        <lable for="tel">연락처: </lable>
+        <input type="tel" id="tel" name="tel">
+        <label for="email">이메일</label>
+        <input type="text" id="first_email" name="first_email"> @
+        <select id="sec_select" name="sec_email">
+            <option value="naver">naver.com</option>
+            <option value="daum">daum.com</option>
+            <option value="google">google.com</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="credit">수신동의 여부: </label>
+            <form>
+                <input type="radio" name="credit" value="TYes">
+                <label for="TYes">문자 수신</label>
+                <input type="radio" name="credit" value="EYes">
+                <label for="EYes">이메일 수신</label>
+                <input type="radio" name="credit" value="No">
+                <label for="No">수신 안함</label>
+            </form>
+        <br>
+
+        <label>취미: </label>
+            <form>
+                <input type="checkbox" name="Interest" value="Movie">
+                <label for="Movie">영화감상</label>
+                <input type="checkbox" name="Interest" value="Music">
+                <label for="Music">음악감상</label>
+                <input type="checkbox" name="Interest" value="Sports">
+                <label for="Sports">운동</label>
+                <input type="checkbox" name="Interest" value="Game">
+                <label for="Game">게임</label>
+            </form>
+    </form>
+    </div>
+
+    <div>
+        <p>자기소개: </p>
+        <textarea name="Introduction" row="40" cols="50"></textarea>
+        <br>
+        <hr>
+        <input type="submit" value="저장">
+    </div>
+</body>
+</html>
